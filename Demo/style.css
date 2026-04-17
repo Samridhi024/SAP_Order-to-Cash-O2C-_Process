@@ -1,0 +1,37 @@
+:root {
+    --sap-blue: #1a3c6e;
+    --sap-light: #a8c4e8;
+    --success: #0d5c2e;
+    --border: #d1d7e0;
+    --bg: #f4f7f9;
+}
+
+body { font-family: 'Inter', sans-serif; background: #f0f2f5; padding: 40px; }
+
+.app-container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; }
+
+.sap-header { background: var(--sap-blue); padding: 25px; color: #fff; display: flex; justify-content: space-between; align-items: center; }
+
+.module-badge { background: var(--success); padding: 6px 15px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+
+.progress-container { height: 6px; background: #eee; }
+.progress-fill { height: 100%; background: var(--success); width: 0%; transition: 0.4s; }
+
+.pipeline { display: flex; padding: 20px; gap: 10px; background: var(--bg); border-bottom: 1px solid var(--border); }
+.step-node { flex: 1; padding: 10px; text-align: center; border: 1px solid var(--border); border-radius: 8px; background: #fff; font-size: 11px; opacity: 0.5; }
+.step-node.active { opacity: 1; border: 2px solid var(--sap-blue); font-weight: 600; }
+.step-node.done { opacity: 1; background: #eaf3de; border-color: #639922; color: #27500A; }
+
+.content-area { padding: 30px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+.field-group label { display: block; font-size: 11px; font-weight: 700; color: #666; margin-bottom: 5px; text-transform: uppercase; }
+.field-group input { width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 6px; background: #fdfdfd; }
+
+.description-box { background: #f8f9fa; border-left: 5px solid var(--sap-blue); padding: 15px; margin-bottom: 25px; font-size: 14px; color: #444; }
+
+.accounting-entries { display: flex; gap: 15px; margin: 25px 0; }
+.acc-card { flex: 1; padding: 15px; border-radius: 8px; border: 1px solid #ddd; }
+.debit { background: #fff8ef; border-color: #ffcc80; }
+.credit { background: #f1f8e9; border-color: #a5d6a7; }
+
+.btn-primary { background: var(--sap-blue); color: #fff; border: none; padding: 15px 30px; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 20px; }
